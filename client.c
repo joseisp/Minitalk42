@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   client.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jinacio- <jinacio-@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: jinacio- < jinacio-@student.42sp.org.br    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/01/10 21:07:06 by jinacio-          #+#    #+#             */
-/*   Updated: 2022/01/14 22:19:41 by jinacio-         ###   ########.fr       */
+/*   Updated: 2022/01/18 18:05:28 by jinacio-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,12 +58,12 @@ void	send_sinal(int bin, int pid)
 		if (i[j] == '0')
 		{
 			kill(pid, SIGUSR1);
-			usleep(3000);
+			usleep(2500);
 		}
 		else if (i[j] == '1')
 		{
 			kill (pid, SIGUSR2);
-			usleep(3000);
+			usleep(2500);
 		}
 		j++;
 	}
